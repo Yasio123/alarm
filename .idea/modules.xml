@@ -3,6 +3,13 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Alarm.iml" filepath="$PROJECT_DIR$/.idea/Alarm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Dioda/.idea/Dioda.iml" filepath="$PROJECT_DIR$/../Dioda/.idea/Dioda.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Przycisk/.idea/Przycisk.iml" filepath="$PROJECT_DIR$/../Przycisk/.idea/Przycisk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../RGBstick/.idea/RGBstick.iml" filepath="$PROJECT_DIR$/../RGBstick/.idea/RGBstick.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Temperatura/.idea/Temperatura.iml" filepath="$PROJECT_DIR$/../Temperatura/.idea/Temperatura.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../test/.idea/test.iml" filepath="$PROJECT_DIR$/../test/.idea/test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../test2/.idea/test6.iml" filepath="$PROJECT_DIR$/../test2/.idea/test6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../światła drogowe/.idea/światła drogowe.iml" filepath="$PROJECT_DIR$/../światła drogowe/.idea/światła drogowe.iml" />
     </modules>
   </component>
 </project>

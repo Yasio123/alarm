@@ -14,5 +14,12 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="MicroPython" level="project" />
+    <orderEntry type="module" module-name="Dioda" />
+    <orderEntry type="module" module-name="Przycisk" />
+    <orderEntry type="module" module-name="RGBstick" />
+    <orderEntry type="module" module-name="Temperatura" />
+    <orderEntry type="module" module-name="test" />
+    <orderEntry type="module" module-name="test6" />
+    <orderEntry type="module" module-name="światła drogowe" />
   </component>
 </module>
