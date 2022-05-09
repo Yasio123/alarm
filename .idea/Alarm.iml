@@ -21,5 +21,7 @@
     <orderEntry type="module" module-name="test" />
     <orderEntry type="module" module-name="test6" />
     <orderEntry type="module" module-name="światła drogowe" />
+    <orderEntry type="library" name="MicroPython" level="project" />
+    <orderEntry type="library" name="MicroPython" level="project" />
   </component>
 </module>
