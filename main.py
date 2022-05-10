@@ -12,7 +12,7 @@ while True:
     lon = Pin(25, Pin.OUT)
     # WEJSCIA
     p1 = Pin(5, Pin.IN, Pin.PULL_UP)  # PRZYCISK START
-    c1 = Pin(17, Pin.IN, Pin.PULL_DOWN)  # CZUJKA RUCHU
+    c1 = Pin(17, Pin.IN)  # CZUJKA RUCHU
 
     # POKAZUJE STATUS CZUJKI NA L1
     l1.value(c1.value())
@@ -27,7 +27,7 @@ while True:
 
 
 # PRZERWANIE CZUJKI
-    c1.irq(trigger=Pin.IRQ_FALLING | Pin.IRQ_RISING,
+    c1.irq(trigger=Pin.IRQ_RISING | Pin.IRQ_FALLING,
            handler=c1_change)
 
 # LOGIKA ALARMU
@@ -48,14 +48,22 @@ while True:
 
     while c1.value() == 0:
         sleep(20)
-        while c1.value() == 0:
-            sleep(10)
+        if c1.value() == 0:
+                pass
+        else:
             pass
 # ALARM!!
+    sleep(5)
     l3.value(0)
     l4.value(1)
     s1.value(1)
     sleep(30)
 # ODCZEKAJ 30 SEKUND I WYLACZ
+    l4.value(0)
+    s1.value(0)
+    sleep(10)
+    l4.value(1)
+    s1.value(1)
+    sleep(30)
     l4.value(0)
     s1.value(0)
