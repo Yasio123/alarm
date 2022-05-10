@@ -1,7 +1,6 @@
 from machine import Pin
 from utime import sleep
 
-
 while True:
     # WYJSCIA
     l1 = Pin(15, Pin.OUT)  # LED-STATUS WYLACZONY
@@ -18,21 +17,22 @@ while True:
     l1.value(c1.value())
 
     lon.value(1)
+
+
     # FUNKCJA WYWOLANA CZUJKA
     # POKAZUJE STATUS CZUJKI NA L1
-
 
     def c1_change(p):
         l1.value(c1.value())
 
 
-# PRZERWANIE CZUJKI
+    # PRZERWANIE CZUJKI
     c1.irq(trigger=Pin.IRQ_RISING | Pin.IRQ_FALLING,
            handler=c1_change)
 
-# LOGIKA ALARMU
+    # LOGIKA ALARMU
 
-# CZEKAJ NA PRZYCISK
+    # CZEKAJ NA PRZYCISK
     while p1.value() == 1:
         pass
 
@@ -40,7 +40,7 @@ while True:
     sleep(20)  # ODCZEKAJ 10 SEKUND
     l2.value(0)
 
-# CZEKAJ NA ZADZIALANIE CZUJKI
+    # CZEKAJ NA ZADZIALANIE CZUJKI
     while c1.value() == 1:
         pass
 
@@ -49,16 +49,16 @@ while True:
     while c1.value() == 0:
         sleep(20)
         if c1.value() == 0:
-                pass
+            pass
         else:
             pass
-# ALARM!!
+    # ALARM!!
     sleep(5)
     l3.value(0)
     l4.value(1)
     s1.value(1)
     sleep(30)
-# ODCZEKAJ 30 SEKUND I WYLACZ
+    # ODCZEKAJ 30 SEKUND I WYLACZ
     l4.value(0)
     s1.value(0)
     sleep(10)
