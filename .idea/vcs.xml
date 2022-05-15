@@ -4,6 +4,7 @@
     <mapping directory="" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../RGBstick" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../Temperatura" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../keypad" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../światła drogowe" vcs="Git" />
   </component>
 </project>
