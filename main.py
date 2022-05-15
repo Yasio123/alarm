@@ -12,7 +12,7 @@ while True:
     # WEJSCIA
     p1 = Pin(5, Pin.IN, Pin.PULL_UP)  # PRZYCISK START
     c1 = Pin(17, Pin.IN, Pin.PULL_DOWN)  # CZUJKA RUCHU
-
+    c1.value(0)
     # POKAZUJE STATUS CZUJKI NA L1
     l1.value(c1.value())
 
