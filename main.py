@@ -18,7 +18,6 @@ while True:
 
     lon.value(1)
 
-
     # FUNKCJA WYWOLANA CZUJKA
     # POKAZUJE STATUS CZUJKI NA L1
 
