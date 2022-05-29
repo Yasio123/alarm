@@ -28,5 +28,6 @@
     <orderEntry type="module" module-name="keypad" />
     <orderEntry type="library" name="MicroPython" level="project" />
     <orderEntry type="module" module-name="naukapythona" />
+    <orderEntry type="library" name="MicroPython" level="project" />
   </component>
 </module>
